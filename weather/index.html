@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weather</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="container">
+    <h1>Weather</h1>
+    <nav><a href="../index.html">← Back to portfolio</a></nav>
+  </header>
+
+  <main class="container">
+    <form id="search" autocomplete="off">
+      <input id="q" type="text" placeholder="Search city…" aria-label="City" />
+      <div class="units" role="group" aria-label="Units">
+        <input type="radio" name="unit" id="c" value="metric" checked />
+        <label for="c">°C</label>
+        <input type="radio" name="unit" id="f" value="imperial" />
+        <label for="f">°F</label>
+      </div>
+      <button id="go" type="submit">Get Weather</button>
+    </form>
+
+    <section id="current" aria-live="polite"></section>
+    <section id="hourly" aria-live="polite"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

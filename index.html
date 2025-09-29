@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rashid — Frontend Developer Portfolio</title>
+
+
+  <meta name="description" content="Portfolio of Rashid — junior web developer focused on clean, accessible frontend work with JavaScript, APIs and responsive UI. Leveraging AI tools to accelerate learning and delivery." />
+  <link rel="canonical" href="https://rashlid.github.io/Portfolio/" />
+
+
+  <meta property="og:title" content="Rashid — Frontend Developer Portfolio">
+  <meta property="og:description" content="Projects with live demos, clean code, API integrations, and AI-empowered development." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rashlid.github.io/Portfolio/" />
+  <meta property="og:image" content="assets/og-image.jpg" />
+
+  <link rel="icon" href="assets/favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header id="home" class="site-header" role="banner">
+    <div class="container">
+      <div class="brand">
+        <h1 class="site-title">Rashid</h1>
+        <p class="tagline">Junior Web Developer • London, UK</p>
+      </div>
+
+      <button id="menuToggle" class="menu-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#ai-journey">AI</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a class="button button--ghost" href="assets/Rashid_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+        <a class="icon-link" href="https://github.com/rashlid" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+        <a class="icon-link" href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section id="about" class="section hero">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <h2>Building clean, accessible, responsive web apps</h2>
+          <p>
+            I’m a London-based junior developer transitioning from clinical pharmacy.
+            I focus on <strong>JavaScript</strong>, <strong>API integrations</strong>, and <strong>responsive UI</strong>.
+            My healthcare background makes me meticulous with <strong>safety, data accuracy, and process</strong> — qualities I now apply to software.
+          </p>
+          <p>
+            Along the way, I’ve embraced <strong>AI-empowered tools</strong> like ChatGPT and GitHub Copilot to accelerate learning,
+            debug efficiently, and translate healthcare workflows into usable software. AI helps me move faster without skipping fundamentals —
+            I still write, refactor, and test my own code.
+          </p>
+          <div class="cta-row">
+            <a class="button" href="#projects">See Projects</a>
+            <a class="button button--ghost" href="assets/Rashid_Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+          </div>
+          <ul class="quick-facts" aria-label="Quick facts">
+            <li>Based in London (open to remote/GCC)</li>
+            <li>Actively building a full-stack project</li>
+            <li>Available for junior frontend roles</li>
+          </ul>
+        </div>
+
+        <figure class="hero__media">
+          <img src="assets/profile.jpg" alt="Rashid — developer banner" width="640" height="360" loading="lazy" />
+          <figcaption class="sr-only"></figcaption>
+        </figure>
+      </div>
+    </section>
+
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="chips">
+          <span class="chip" aria-label="HTML5">HTML5</span>
+          <span class="chip" aria-label="CSS3 / Flexbox / Grid">CSS3 (Flexbox, Grid)</span>
+          <span class="chip" aria-label="JavaScript">JavaScript (ES6+)</span>
+          <span class="chip" aria-label="Fetch API and async">Fetch API / async</span>
+          <span class="chip" aria-label="Accessibility">a11y</span>
+          <span class="chip" aria-label="Responsive Web Design">Responsive Web Design</span>
+          <span class="chip" aria-label="Git and GitHub">Git / GitHub</span>
+          <span class="chip" aria-label="REST APIs">REST APIs</span>
+          <span class="chip" aria-label="Performance and semantics">Performance & Semantics</span>
+          <span class="chip" aria-label="AI-empowered development">AI-empowered development</span>
+        </div>
+        <p class="skills-note">
+          Currently learning: <strong>Node.js + Express</strong> and <strong>basic SQL</strong>.
+        </p>
+      </div>
+    </section>
+
+
+    <section id="ai-journey" class="section">
+      <div class="container">
+        <h2>How AI Powers My Journey</h2>
+        <p>
+          Transitioning from pharmacy into software hasn’t been easy — but I’ve leveraged AI to close the gap quickly.
+          I use <strong>ChatGPT</strong> for ideation and rubber-duck debugging, <strong>GitHub Copilot</strong> for boilerplate and test scaffolds,
+          and AI-assisted linting to spot edge cases early. These tools free me to focus on architecture, accessibility, and user experience.
+        </p>
+        <p>
+          My clinical background taught me evidence-based decision making, auditing, and documentation.
+          Combined with AI-driven workflows, I learn faster, code smarter, and bring a process-first mindset to every project.
+        </p>
+      </div>
+    </section>
+
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+
+        <div class="projects-grid">
+
+          <article class="card project" data-tech="html,css,js" data-level="beginner">
+            <img class="card__thumb" src="assets/thumb-todo.jpg" alt="Screenshot of To-Do app" width="480" height="270" loading="lazy" />
+            <div class="card__body">
+              <h3>To-Do List App</h3>
+              <p class="card__desc">
+                Add/complete/delete tasks with clean UI. Focus on keyboard support, ARIA, and persistent state (localStorage).
+              </p>
+              <ul class="tags">
+                <li>DOM</li><li>ARIA</li><li>localStorage</li>
+              </ul>
+              <div class="card__actions">
+                <a class="button" href="./todo/index.html" target="_blank" rel="noopener">Live Demo</a>
+                <a class="button button--ghost" href="https://github.com/rashlid/Portfolio/tree/main/todo" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="card project" data-tech="html,css,js,api" data-level="beginner">
+            <img class="card__thumb" src="assets/thumb-weather.jpg" alt="Screenshot of Weather app" width="480" height="270" loading="lazy" />
+            <div class="card__body">
+              <h3>Weather App</h3>
+              <p class="card__desc">
+                City search with live API data, loading/error states, and graceful fallbacks for network issues.
+              </p>
+              <ul class="tags">
+                <li>Fetch</li><li>Async</li><li>API</li>
+              </ul>
+              <div class="card__actions">
+                <a class="button" href="./weather/index.html" target="_blank" rel="noopener">Live Demo</a>
+                <a class="button button--ghost" href="https://github.com/rashlid/Portfolio/tree/main/weather" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="card project" data-tech="html,css,js" data-level="beginner">
+            <img class="card__thumb" src="assets/thumb-fitness.jpg" alt="Screenshot of Fitness tracker app" width="480" height="270" loading="lazy" />
+            <div class="card__body">
+              <h3>Fitness Tracker</h3>
+              <p class="card__desc">
+                Log workouts, track progress, and visualize weekly activity. Built with accessible forms and responsive layout.
+              </p>
+              <ul class="tags">
+                <li>Forms</li><li>State</li><li>Responsive</li>
+              </ul>
+              <div class="card__actions">
+                <a class="button" href="./fitness/index.html" target="_blank" rel="noopener">Live Demo</a>
+                <a class="button button--ghost" href="https://github.com/rashlid/Portfolio/tree/main/fitness" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="card project project--upcoming" aria-label="Upcoming full-stack project">
+            <div class="card__body">
+              <h3>Next Up: Full-Stack Mini App</h3>
+              <p class="card__desc">
+                Authentication, CRUD, and a small dashboard with Node.js + Express and a SQL DB. ETA Q4.
+              </p>
+              <ul class="tags">
+                <li>Node</li><li>Express</li><li>SQL</li>
+              </ul>
+              <div class="card__actions">
+                <button class="button" disabled aria-disabled="true" title="Coming soon">Demo (Soon)</button>
+                <button class="button button--ghost" disabled aria-disabled="true" title="Coming soon">Code (Soon)</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>
+          Best way to reach me: <a href="mailto:Dahir_A@hotmail.com">Dahir_A@hotmail.com</a>
+        </p>
+        <p class="contact-links">
+          <a href="https://github.com/rashlid" target="_blank" rel="noopener">GitHub</a> •
+          <a href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">LinkedIn</a> •
+          <a href="assets/Rashid_Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Rashid. Built with semantic HTML, accessibility, and care.</p>
+      <a id="backToTop" href="#home" class="back-to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Rashid",
+    "jobTitle": "Junior Web Developer",
+    "address": { "@type": "PostalAddress", "addressLocality": "London", "addressCountry": "GB" },
+    "email": "mailto:Dahir_A@hotmail.com",
+    "url": "https://rashlid.github.io/Portfolio/",
+    "sameAs": [
+      "https://github.com/rashlid",
+      "https://www.linkedin.com/in/your-handle"
+    ],
+    "knowsAbout": ["JavaScript", "APIs", "Accessibility", "Responsive Design", "AI-empowered development"]
+  }
+  </script>
+
+  <script>
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const toggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('site-nav');
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!expanded));
+        nav.classList.toggle('open');
+      });
+    }
+  </script>
+</body>
+</html>

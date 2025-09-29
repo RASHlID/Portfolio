@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Fitness App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Fitness Tracker App</h1>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Add Workout</h2>
+      <form id="workoutForm">
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label for="type">Workout Type</label>
+            <select id="type" required>
+              <option value="">Select</option>
+              <option value="Cardio">Cardio</option>
+              <option value="Strength">Strength</option>
+              <option value="Yoga">Yoga</option>
+              <option value="HIIT">HIIT</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="duration">Duration (minutes)</label>
+            <input type="number" id="duration" min="1" required>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="notes">Notes</label>
+            <input type="text" id="notes" placeholder="Optional notes (e.g., muscle group, pace, mood)">
+          </div>
+        </div>
+
+        <button type="submit">Add Workout</button>
+      </form>
+    </section>
+
+
+    <section class="stats" aria-live="polite">
+      <h2>Workout Statistics</h2>
+      <div class="stats-grid">
+        <p id="totalWorkouts" class="stat-card"><span class="stat-label">Total Workouts</span><span class="stat-value">0</span></p>
+        <p id="totalDuration" class="stat-card"><span class="stat-label">Total Duration</span><span class="stat-value">0 min</span></p>
+        <p id="avgDuration" class="stat-card"><span class="stat-label">Average Duration</span><span class="stat-value">0 min</span></p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Workout History</h2>
+      <ul class="workout-list" id="workoutList"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
